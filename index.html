@@ -1,78 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andre Wisley - Soluções Tecnológicas | Desenvolvimento Fullstack</title>
+  <meta name="description" content="Desenvolvedor fullstack especializado em Node.js, PHP, Java, React.js, Next.js e integrações de APIs WhatsApp. Transforme sua ideia em realidade digital.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <h1 class="logo">Minha Marca</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#features">Recursos</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <h1 class="logo">Andre Wisley</h1>
+        <nav class="navigation" aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="#services" class="menu-link">Serviços</a></li>
+            <li><a href="#technologies" class="menu-link">Tecnologias</a></li>
+            <li><a href="#about" class="menu-link">Sobre</a></li>
+            <li><a href="#contact" class="menu-link">Contato</a></li>
+          </ul>
+          <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Transforme seu Negócio</h2>
-      <p>Aumente suas vendas com uma landing page incrível e moderna.</p>
-      <a href="#contact" class="btn-primary">Quero saber mais</a>
-    </div>
-  </section>
-
-  <section id="features" class="features">
-    <div class="container">
-      <h3>Por que escolher nossa solução?</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>Design Moderno</h4>
-          <p>Layout responsivo e adaptado a qualquer dispositivo.</p>
-        </div>
-        <div class="card">
-          <h4>Alta Conversão</h4>
-          <p>Estrutura otimizada para captar leads.</p>
-        </div>
-        <div class="card">
-          <h4>Fácil de Usar</h4>
-          <p>Edite facilmente o conteúdo e publique rapidamente.</p>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="hero-title">Soluções Tecnológicas Completas</h2>
+          <p class="hero-description">Desenvolvedor fullstack especializado em criar sistemas robustos e escaláveis. Do backend ao frontend, transformo suas ideias em realidade digital.</p>
+          <a href="#contact" class="btn-primary">Vamos conversar</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h3>Sobre Nós</h3>
-      <p>
-        Somos especialistas em desenvolvimento de landing pages de alta conversão,
-        utilizando tecnologias modernas e escaláveis.
-      </p>
-    </div>
-  </section>
+    <section id="services" class="services">
+      <div class="container">
+        <h3 class="section-title">Serviços Especializados</h3>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6H16L14 4H10L8 6H4C2.9 6 2 6.9 2 8V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V8C22 6.9 21.1 6 20 6ZM12 17C9.24 17 7 14.76 7 12S9.24 7 12 7S17 9.24 17 12S14.76 17 12 17Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h4 class="service-title">Desenvolvimento Backend</h4>
+            <p class="service-description">APIs robustas e escaláveis em Node.js, PHP e Java com arquitetura moderna e segura.</p>
+          </article>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h3>Entre em Contato</h3>
-      <form>
-        <input type="text" placeholder="Seu Nome" required />
-        <input type="email" placeholder="Seu Email" required />
-        <textarea placeholder="Sua Mensagem"></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h4 class="service-title">Desenvolvimento Frontend</h4>
+            <p class="service-description">Interfaces modernas e responsivas com React.js, Next.js e HTML/CSS otimizados.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5H4.03C4.15 8.14 5.31 6.1 7.58 4.08ZM19.97 10.5H21.97C21.83 7.3 20.25 4.48 17.85 2.65L16.42 4.08C18.69 6.1 19.85 8.14 19.97 10.5ZM18 11C18 7.93 16.36 5.36 13.5 4.68V2H10.5V4.68C7.64 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16V11ZM12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h4 class="service-title">Integrações WhatsApp</h4>
+            <p class="service-description">Automação e integrações avançadas com APIs do WhatsApp e plataforma Infobip.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies" class="technologies">
+      <div class="container">
+        <h3 class="section-title">Stack Tecnológico</h3>
+        <div class="tech-categories">
+          <div class="tech-category">
+            <h4 class="tech-category-title">Backend</h4>
+            <div class="tech-list">
+              <span class="tech-item">Node.js</span>
+              <span class="tech-item">PHP</span>
+              <span class="tech-item">Java</span>
+              <span class="tech-item">APIs REST</span>
+              <span class="tech-item">Microserviços</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4 class="tech-category-title">Frontend</h4>
+            <div class="tech-list">
+              <span class="tech-item">React.js</span>
+              <span class="tech-item">Next.js</span>
+              <span class="tech-item">HTML5</span>
+              <span class="tech-item">CSS3</span>
+              <span class="tech-item">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4 class="tech-category-title">Integrações</h4>
+            <div class="tech-list">
+              <span class="tech-item">WhatsApp API</span>
+              <span class="tech-item">Infobip</span>
+              <span class="tech-item">APIs Terceiros</span>
+              <span class="tech-item">Webhooks</span>
+              <span class="tech-item">OAuth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <h3 class="section-title">Sobre Andre Wisley</h3>
+          <p class="about-description">
+            Desenvolvedor fullstack apaixonado por tecnologia e inovação. Especializo-me em criar soluções
+            completas desde o backend até o frontend, sempre focando em qualidade, performance e escalabilidade.
+            Com experiência em diversas tecnologias e integrações, transformo ideias complexas em sistemas funcionais.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Anos Experiência</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projetos Entregues</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Comprometimento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <h3 class="section-title">Entre em Contato</h3>
+          <p class="contact-description">Pronto para transformar seu negócio? Vamos conversar!</p>
+          
+          <form class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Nome completo</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name"
+                class="form-input" 
+                placeholder="Seu nome completo" 
+                required 
+                aria-describedby="name-error"
+              >
+              <span class="form-error" id="name-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email"
+                class="form-input" 
+                placeholder="seu@email.com" 
+                required 
+                aria-describedby="email-error"
+              >
+              <span class="form-error" id="email-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Mensagem</label>
+              <textarea 
+                id="message" 
+                name="message"
+                class="form-textarea" 
+                placeholder="Conte-nos sobre seu projeto..."
+                rows="4"
+                aria-describedby="message-error"
+              ></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            
+            <button type="submit" class="btn-primary btn-full">
+              <span class="btn-text">Enviar Mensagem</span>
+              <span class="btn-loading">Enviando...</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
-      <p>© 2025 Minha Empresa - Todos os direitos reservados.</p>
+      <div class="footer-content">
+        <div class="footer-info">
+          <h4 class="footer-title">Andre Wisley</h4>
+          <p class="footer-description">Soluções Tecnológicas - Transformando ideias em realidade digital.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#services" class="footer-link">Serviços</a>
+          <a href="#technologies" class="footer-link">Tecnologias</a>
+          <a href="#about" class="footer-link">Sobre</a>
+          <a href="#contact" class="footer-link">Contato</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Andre Wisley - Soluções Tecnológicas - Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
 
